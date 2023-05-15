@@ -37,7 +37,7 @@ function SimpleForm() {
         Toogle More Fields
       </button>
       {toggleMoreFields && (
-        <label>
+        <label className="more-field-class">
           Age <input type="text" name="age" />
         </label>
       )}
