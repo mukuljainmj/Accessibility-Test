@@ -1,3 +1,8 @@
+:root { 
+  --default-font-size: 16px;
+  --font-weight-bold: bold;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: var(--default-font-size);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.container {
+  display: inline-block;
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+label { 
+  font-weight: var(--font-weight-bold);
+  margin-right: .5em;
 }

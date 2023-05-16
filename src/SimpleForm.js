@@ -33,13 +33,21 @@ function SimpleForm() {
       <label>
         Female <input type="radio" name="gender" value="Female" />
       </label>
-      <button type="button" data-testid="toggle-more-fields" onClick={handleToggleMoreFields}>
-        Toogle More Fields
-      </button>
+      <div class="container">
+        <button type="button" data-testid="toggle-more-fields" onClick={handleToggleMoreFields}>
+          Toogle More Fields
+        </button>
+      </div>
+        
       {toggleMoreFields && (
-        <label className="more-field-class">
-          Age <input type="text" name="age" />
-        </label>
+        <div class="container">
+          <label className="more-field-class">
+            Age <input type="text" name="age" />
+          </label>
+
+          <p>First Name:</p>
+          <input type="text" name="name" />
+        </div>
       )}
     </form>
   );
